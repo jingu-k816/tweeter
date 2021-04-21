@@ -61,9 +61,11 @@ const submitTweets = function () {
   $("#tweet-input").on("submit", function (event) {
     event.preventDefault();
     if ($("#tweet-text").val() === "") {
-      alert("Text is empty.");
+      $( ".hide" ).slideDown( "slow", function() {});
+      $( ".hide-exceed" ).slideUp( "slow", function() {});
     } else if ($("#tweet-text").val().length > 141) {
-      alert("Your text exceeds 140 characters.");
+      $( ".hide-exceed" ).slideDown( "slow", function() {});
+      $( ".hide" ).slideUp( "slow", function() {});
     } else {
       $.ajax("/tweets", { method: "POST", data: $(this).serialize() })
         .then(() => {
