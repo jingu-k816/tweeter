@@ -21,6 +21,7 @@
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
     
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
@@ -53,8 +54,8 @@
     <main class="container"> 
        <section class="new-tweet">
         <h2>Compose Tweet</h2>
-        <form method="post" action="/tweets/">
-            <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+        <form method="POST" action="/tweets" id="tweet-input">
+            <textarea name="text" type="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
           <div>
             <button type="submit">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
@@ -62,32 +63,9 @@
         </form>
       </section>
 
-      <section>
-        <article>
-          <header>
-            <h4>Name</h4>
-            <h4>@SirIsaac</h4>
-          </header>
-          <p>This is some text for tweet</p>
-          <footer>
-            <span class="need_to_be_rendered" datetime="2021-04-20T09:24:17Z"></span>
-            <div class=icons-in-tweet>
-              <i class="fas fa-flag"></i>
-              <div>
-                <i class="fas fa-retweet"></i>
-              </div>
-              <i class="fas fa-heart"></i>
-            </div>
-          </footer>
-        </article>
+      <section id="tweets-container">
       </section>
     </main>
 
   </body>
-
-  <footer>
-    <script>
-      timeago.render(document.querySelectorAll('.need_to_be_rendered'));
-    </script>
-  </footer>
 </html>
