@@ -15,15 +15,17 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/tweet.css" type="text/css" />
     
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous"></script>
+    
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
-
+    
   </head>
 
   <body>
@@ -36,7 +38,7 @@
       </div>
     </nav>
 
-    <header>
+    <header class="header-image">
       <div>
           <img src="/images/profile-hex.png"> 
       </div>
@@ -44,7 +46,7 @@
       <div>
           <h2>Your Name</h2>
       </div>
-  </header>
+    </header>
 
 
     <!-- Page-specific (main) content here -->
@@ -59,7 +61,33 @@
           </div>
         </form>
       </section>
+
+      <section>
+        <article>
+          <header>
+            <h4>Name</h4>
+            <h4>@SirIsaac</h4>
+          </header>
+          <p>This is some text for tweet</p>
+          <footer>
+            <span class="need_to_be_rendered" datetime="2021-04-20T09:24:17Z"></span>
+            <div class=icons-in-tweet>
+              <i class="fas fa-flag"></i>
+              <div>
+                <i class="fas fa-retweet"></i>
+              </div>
+              <i class="fas fa-heart"></i>
+            </div>
+          </footer>
+        </article>
+      </section>
     </main>
 
   </body>
+
+  <footer>
+    <script>
+      timeago.render(document.querySelectorAll('.need_to_be_rendered'));
+    </script>
+  </footer>
 </html>
