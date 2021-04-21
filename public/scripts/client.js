@@ -39,11 +39,11 @@ const renderTweets = function(tweets) {
 }
 
 const createTweetElement = function(tweet) {
-
   let $tweet = `
   <article>
     <header>
       <div>
+        <img src="${tweet.user.avatars}"/>
         <h5>${tweet.user.name}</h5>
       </div>
       <p>${tweet.user.handle}</p>
