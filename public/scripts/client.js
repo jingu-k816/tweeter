@@ -3,25 +3,25 @@
  * jQuery is already loaded
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
-const renderTweets = function(tweets) {
+const renderTweets = function (tweets) {
   //deletes the existing tweet so that only the new tweet will be posted.
-  $('#tweets-container').empty();
+  $("#tweets-container").empty();
   //loops through tweets
   for (const tweet of tweets) {
     //calls createTweetElement for each tweets
     const newTweet = createTweetElement(tweet);
     //takes return value and appends it to the tweets container
-    $('#tweets-container').prepend(newTweet);
+    $("#tweets-container").prepend(newTweet);
   }
 };
 
-const escape = function(str) {
+const escape = function (str) {
   let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
 };
 
-const createTweetElement = function(tweet) {
+const createTweetElement = function (tweet) {
   let $tweet = `
   <article>
     <header>
@@ -47,36 +47,35 @@ const createTweetElement = function(tweet) {
   return $tweet;
 };
 
-const loadTweets = function() {
-  const submitButton = $('button');
-  $.ajax('/tweets', { method: 'GET' })
-    .then(function(moreTweet) {
+const loadTweets = function () {
+  const submitButton = $("button");
+  $.ajax("/tweets", { method: "GET" })
+    .then(function (moreTweet) {
       renderTweets(moreTweet);
-      timeago.render(document.querySelectorAll('.need_to_be_rendered'));
+      timeago.render(document.querySelectorAll(".need_to_be_rendered"));
     })
     .catch((e) => console.log(("error: ", e)));
 };
 
-const submitTweets = function() {
-
-  $("#tweet-input").on('submit', function(event) {
+const submitTweets = function () {
+  $("#tweet-input").on("submit", function (event) {
     event.preventDefault();
-    if ($('#tweet-text').val() === "") {
+    if ($("#tweet-text").val() === "") {
       alert("Text is empty.");
-    } else if ($('#tweet-text').val().length > 141) {
+    } else if ($("#tweet-text").val().length > 141) {
       alert("Your text exceeds 140 characters.");
     } else {
-      $.ajax('/tweets', { method: 'POST', data: $(this).serialize() })
+      $.ajax("/tweets", { method: "POST", data: $(this).serialize() })
         .then(() => {
           location.reload();
           loadTweets();
         })
-        .catch((error) => console.log("error: " , error));
+        .catch((error) => console.log("error: ", error));
     }
   });
 };
 
-$(document).ready(function() {
+$(document).ready(function () {
   submitTweets();
   loadTweets();
 });
