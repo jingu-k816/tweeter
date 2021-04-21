@@ -54,6 +54,8 @@
     <main class="container"> 
        <section class="new-tweet">
         <h2>Compose Tweet</h2>
+        <span class="hide">⛔️ Error! No text input ⛔️</span>
+        <span class="hide-exceed">⛔️ Error! Tweet exceeds 140 characters ⛔️</span>
         <form method="POST" action="/tweets" id="tweet-input">
             <textarea name="text" type="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
           <div>
