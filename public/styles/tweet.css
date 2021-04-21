@@ -1,0 +1,60 @@
+article{
+  border: 3px solid black;
+  padding: 0 20px;
+}
+
+article:hover{
+  box-shadow: 8px 8px 3px -2px #4056A1;
+}
+
+section article{
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+}
+
+article p {
+  border-bottom: 3px solid black;
+  width: 100%;
+  margin: 10px 0;
+}
+
+article header {
+  display: flex;
+  justify-content: space-between;
+}
+
+article footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 5px;
+}
+
+.need_to_be_rendered {
+  font-size: 20px;
+}
+
+article div.icons-in-tweet {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 15px;
+  color: #4056A1;
+}
+
+div.icons-in-tweet div{
+  margin: 0 10px;
+}
+
+article div .fa-flag:hover {
+  color: #D79922;
+}
+
+article div .fa-retweet:hover {
+  color: #D79922;
+}
+
+article div .fa-heart:hover {
+  color: #D79922;
+}
