@@ -8,9 +8,14 @@ This app is built using HTML, CSS, JavaScript, jQuery abd AJAX front-end skills,
 
 # Final Product
 
-![Screenshot of the main Tweeter App](https://github.com/jingu-k816/tweeter/blob/master/docs/main-tweet-page.png "Main Tweeter App")
-![Screenshot of the tweet](https://github.com/jingu-k816/tweeter/blob/master/docs/tweet.png "Main Tweeter App with tweet and hover effect")
-![Screenshot of the responsive design](https://github.com/jingu-k816/tweeter/blob/master/docs/responsive-design-page.png "Responsive design of the Tweeter app")
+- Main Tweeter App
+![Screenshot of the main Tweeter App](https://github.com/jingu-k816/tweeter/blob/master/docs/main-tweet-page.png)
+
+-  Main Tweeter App with tweet and hover effect
+![Screenshot of the tweet](https://github.com/jingu-k816/tweeter/blob/master/docs/tweet.png)
+
+- Responsive design of the Tweeter app
+![Screenshot of the responsive design](https://github.com/jingu-k816/tweeter/blob/master/docs/responsive-design-page.png)
 
 ## Dependencies
 
