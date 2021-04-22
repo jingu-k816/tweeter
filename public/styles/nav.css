@@ -26,6 +26,9 @@ nav p {
 .nav-new-tweet{
   display: flex;
   flex-direction: column;
+  border: none;
+  background-color: #4056A1;
+  color: white;
 }
 
 .fa-angle-double-down{
