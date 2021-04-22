@@ -10,7 +10,7 @@ article:hover{
 section article{
   display: flex;
   flex-direction: column;
-  margin-bottom: 90px;
+  margin: 90px 0;;
   width: 100%;
 }
 article > header > div > img {
@@ -60,14 +60,6 @@ div.icons-in-tweet div{
   margin: 0 10px;
 }
 
-article div .fa-flag:hover {
-  color: #D79922;
-}
-
-article div .fa-retweet:hover {
-  color: #D79922;
-}
-
-article div .fa-heart:hover {
+article div .fas:hover {
   color: #D79922;
 }
