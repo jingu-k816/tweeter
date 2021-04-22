@@ -29,6 +29,7 @@ article > header > div {
 
 article > p {
   border-bottom: 3px solid black;
+  word-wrap: break-word;
   width: 100%;
   margin: 10px 0;
 }
