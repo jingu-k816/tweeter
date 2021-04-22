@@ -1,11 +1,14 @@
-.header-image{
+.header-image {
   margin-top: 120px;
   height: 400px;
-  width: auto;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #c5cbe3;
   background-image: url("https://www.transparenttextures.com/patterns/buried.png");
+}
+
+.header-image h2 {
+  margin-top: 0;
 }
