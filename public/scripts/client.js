@@ -61,15 +61,18 @@ const submitTweets = function () {
   $("#tweet-input").on("submit", function (event) {
     event.preventDefault();
     if ($("#tweet-text").val() === "") {
-      $( ".hide" ).slideDown( "slow", function() {});
-      $( ".hide-exceed" ).slideUp( "slow", function() {});
+      $( ".hide-exceed" ).slideUp( "slow", function() {      
+        $( ".hide" ).slideDown( "slow", function() {});
+      });
     } else if ($("#tweet-text").val().length > 141) {
-      $( ".hide-exceed" ).slideDown( "slow", function() {});
-      $( ".hide" ).slideUp( "slow", function() {});
+      $( ".hide" ).slideUp( "slow", function() {
+        $( ".hide-exceed" ).slideDown( "slow", function() {});
+      });
     } else {
       $.ajax("/tweets", { method: "POST", data: $(this).serialize() })
         .then(() => {
-          location.reload();
+          $("#tweet-text").val("");
+          $(".counter").val(140);
           loadTweets();
         })
         .catch((error) => console.log("error: ", error));
@@ -77,7 +80,14 @@ const submitTweets = function () {
   });
 };
 
+const slideNewTweet = function() {
+  $(".nav-new-tweet").on("click", function(event){
+    $( ".new-tweet" ).slideToggle( "slow", function() {});
+  });
+}
+
 $(document).ready(function () {
+  slideNewTweet();
   submitTweets();
   loadTweets();
 });
