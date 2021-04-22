@@ -6,7 +6,9 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -18,7 +20,7 @@ body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 /*
@@ -26,5 +28,36 @@ body {
  */
 main {
   margin: 0 auto;
-  width:90%;
+  width: 90%;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: row;
+  }
+
+  body > nav {
+    background-color: #4056a1;
+    background-image: none;
+  }
+
+  nav > .nav-new-tweet {
+    background-color: #4056a1;
+    background-image: none;
+  }
+  header.header-image {
+    margin: 250px 150px 0px 50px;
+    width: 600px;
+    height: 380px;
+  }
+
+  .container {
+    margin: 160px 80px 0 40px;
+    min-width: 40%;
+  }
+
+  .new-tweet {
+    margin-top: 80px;
+  }
 }
