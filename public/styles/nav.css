@@ -1,37 +1,36 @@
-nav{
-  color: #FFF;
-  background-color: #4056A1;
-  display:flex;
-  justify-content:space-between;
+nav {
+  color: #fff;
+  background-color: #c5cbe3;
+  background-image: url("https://www.transparenttextures.com/patterns/buried.png");
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   padding: 0 1.5em;
-  height:120px;
+  height: 120px;
   align-items: center;
-  width:100%;
-  
+  width: 100%;
+
   z-index: 1;
   position: fixed;
   top: 0;
- }  
+}
 
- nav span{
-  font-family: 'Bungee', cursive;
-  align-self:center;
-  
- }
+nav span {
+  font-family: "Bungee", cursive;
+  align-self: center;
+}
 
 nav p {
   margin-bottom: 0;
 }
 
-.nav-new-tweet{
-  display: flex;
-  flex-direction: column;
+.nav-new-tweet {
   border: none;
-  background-color: #4056A1;
+  background: transparent;
   color: white;
 }
 
-.fa-angle-double-down{
+.fa-angle-double-down {
   color: red;
   align-self: center;
 }
