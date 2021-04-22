@@ -4,13 +4,13 @@ article {
 }
 
 article:hover {
-  box-shadow: 8px 8px 3px -2px #4056A1;
+  box-shadow: 8px 8px 3px -2px #4056a1;
 }
 
 section article {
   display: flex;
   flex-direction: column;
-  margin: 90px 0;;
+  margin: 90px 0;
   width: 100%;
 }
 
@@ -25,7 +25,6 @@ article > header > div {
   display: flex;
   flex-direction: row;
   align-content: flex-start;
-  
 }
 
 article > p {
@@ -55,7 +54,7 @@ article div.icons-in-tweet {
   display: flex;
   justify-content: flex-end;
   font-size: 15px;
-  color: #4056A1;
+  color: #4056a1;
 }
 
 div.icons-in-tweet div {
@@ -63,5 +62,5 @@ div.icons-in-tweet div {
 }
 
 article div .fas:hover {
-  color: #D79922;
+  color: #d79922;
 }
