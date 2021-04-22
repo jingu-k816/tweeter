@@ -1,18 +1,19 @@
-article{
+article {
   border: 3px solid black;
   padding: 0 20px;
 }
 
-article:hover{
+article:hover {
   box-shadow: 8px 8px 3px -2px #4056A1;
 }
 
-section article{
+section article {
   display: flex;
   flex-direction: column;
   margin: 90px 0;;
   width: 100%;
 }
+
 article > header > div > img {
   width: 50px;
   height: 50px;
@@ -57,7 +58,7 @@ article div.icons-in-tweet {
   color: #4056A1;
 }
 
-div.icons-in-tweet div{
+div.icons-in-tweet div {
   margin: 0 10px;
 }
 
