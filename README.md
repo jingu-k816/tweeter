@@ -1,6 +1,6 @@
 # Tweeter Project
 
-Tweeter is a simple, single-page Twitter clone.
+Tweeter is a simple, responsive single-page Twitter clone.
 
 This app is built using HTML, CSS, JavaScript, jQuery abd AJAX front-end skills, Node and Express back-end skills.
 
@@ -8,8 +8,9 @@ This app is built using HTML, CSS, JavaScript, jQuery abd AJAX front-end skills,
 
 # Final Product
 
-!["Screenshot"]()
-!["screenshot"]()
+![Screenshot of the main Tweeter App](https://github.com/jingu-k816/tweeter/blob/master/docs/main-tweet-page.png)
+![Screenshot of the tweet](https://github.com/jingu-k816/tweeter/blob/master/docs/tweet.png)
+![Screenshot of the responsive design](https://github.com/jingu-k816/tweeter/blob/master/docs/responsive-design-page.png)
 
 ## Dependencies
 
