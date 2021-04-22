@@ -33,42 +33,40 @@
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
-      <span>tweeter</span>
-      <button class="nav-new-tweet" type="button">
-        <p><strong>Write</strong> a new tweet</p>
-        <i class="fas fa-angle-double-down"></i>
-      </div>
+        <span>tweeter</span>
+        <button class="nav-new-tweet" type="button">
+          <p><strong>Write</strong> a new tweet</p>
+          <i class="fas fa-angle-double-down"></i>
+        </button>
     </nav>
 
     <header class="header-image">
       <div>
-          <img src="/images/profile-hex.png"> 
+        <img src="/images/profile-hex.png"> 
       </div>
       <br>
       <div>
-          <h2>Your Name</h2>
+        <h2>Your Name</h2>
       </div>
     </header>
 
 
     <!-- Page-specific (main) content here -->
     <main class="container"> 
-       <section class="new-tweet">
+      <section class="new-tweet">
         <h2>Compose Tweet</h2>
         <span class="hide">⛔️ Error! No text input ⛔️</span>
         <span class="hide-exceed">⛔️ Error! Tweet exceeds 140 characters ⛔️</span>
         <form method="POST" action="/tweets" id="tweet-input">
-            <textarea name="text" type="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+          <textarea name="text" type="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
           <div>
             <button class="submitButton" type="submit">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
       </section>
-
       <section id="tweets-container">
       </section>
     </main>
-
   </body>
 </html>
